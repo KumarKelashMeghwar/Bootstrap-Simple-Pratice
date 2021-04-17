@@ -1,0 +1,149 @@
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: rgb(46, 45, 45);
+}
+
+.container {
+    margin-top: 50px;
+    position: relative;
+}
+
+.row {
+    color: #fff;
+    background-color: transparent;
+}
+
+h2 {
+    color: rgb(20, 202, 20);
+}
+
+.col-md-5 {
+    border: 6px solid deeppink;
+    padding: 20px;
+    box-shadow: 4px 4px 10px #fff;
+    transition: 0.3s ease box-shadow;
+    margin-bottom: 70px;
+}
+
+.col-md-5:hover {
+    box-shadow: 2px 2px 7px #fff;
+}
+
+.animation ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.animation ul li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(30, 30, 30, 0.4);
+    animation: animate 20s linear infinite;
+    z-index: -1;
+}
+
+ul li:nth-child(1) {
+    background-color: rgba(30, 30, 30, 0.4);
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    top: 40px;
+    left: 170px;
+    animation-duration: 7s;
+    animation-delay: 1s;
+    box-shadow: 4px 4px 10px whitesmoke;
+}
+
+ul li:nth-child(2) {
+    background-color: rgba(30, 30, 30, 0.4);
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 570px;
+    left: 450px;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    box-shadow: 4px 4px 10px whitesmoke;
+}
+
+ul li:nth-child(3) {
+    background-color: rgba(30, 30, 30, 0.4);
+    height: 65px;
+    width: 65px;
+    position: absolute;
+    top: 470px;
+    left: 250px;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    box-shadow: 4px 4px 10px whitesmoke;
+}
+
+ul li:nth-child(4) {
+    background-color: rgba(30, 30, 30, 0.4);
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 270px;
+    left: 450px;
+    animation-duration: 6s;
+    animation-delay: 1s;
+    box-shadow: 4px 4px 10px whitesmoke;
+}
+
+ul li:nth-child(5) {
+    background-color: rgba(30, 30, 30, 0.4);
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top: 550px;
+    left: 850px;
+    animation-duration: 6s;
+    animation-delay: 1s;
+    box-shadow: 4px 4px 10px whitesmoke;
+}
+
+ul li:nth-child(6) {
+    background-color: rgba(30, 30, 30, 0.4);
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 270px;
+    left: 950px;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    box-shadow: 4px 4px 10px whitesmoke;
+}
+
+ul li:nth-child(7) {
+    background-color: rgba(30, 30, 30, 0.4);
+    height: 110px;
+    width: 110px;
+    position: absolute;
+    top: 450px;
+    left: 1050px;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    box-shadow: 4px 4px 10px whitesmoke;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 1;
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-300px) rotate(360deg);
+        opacity: 1;
+    }
+}
